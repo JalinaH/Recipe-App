@@ -10,10 +10,10 @@ class RecipeDetailsScreen extends StatelessWidget {
   final Recipe? recipe;
 
   const RecipeDetailsScreen({
-    Key? key,
+    super.key,
     required this.recipeId,
     this.recipe,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

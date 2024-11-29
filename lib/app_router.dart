@@ -38,7 +38,7 @@ class AppRouter {
 }
 
 class RecipeViewerApp extends StatelessWidget {
-  const RecipeViewerApp({Key? key}) : super(key: key);
+  const RecipeViewerApp({super.key});
 
   @override
   Widget build(BuildContext context) {

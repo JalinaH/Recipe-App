@@ -4,7 +4,7 @@ import 'recipe_model.dart';
 
 class RecipesProvider with ChangeNotifier {
   List<Recipe> _recipes = [];
-  List<Recipe> _favoriteRecipes = [];
+  final List<Recipe> _favoriteRecipes = [];
   bool _isLoading = false;
   String _error = '';
 

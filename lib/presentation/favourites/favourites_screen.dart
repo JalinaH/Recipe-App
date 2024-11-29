@@ -7,7 +7,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 
 class FavoritesScreen extends StatelessWidget {
-  const FavoritesScreen({Key? key}) : super(key: key);
+  const FavoritesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
