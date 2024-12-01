@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen({super.key});
 
@@ -75,7 +74,6 @@ class _FavoriteRecipeCard extends StatelessWidget {
         onTap: () => context.push('/home/recipe/${recipe.id}', extra: recipe),
         child: Row(
           children: [
-            // Recipe Image
             ClipRRect(
               borderRadius: const BorderRadius.horizontal(
                 left: Radius.circular(12),
@@ -90,8 +88,6 @@ class _FavoriteRecipeCard extends StatelessWidget {
                 errorWidget: (context, url, error) => const Icon(Icons.error),
               ),
             ),
-
-            // Recipe Details
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(12),
@@ -139,7 +135,6 @@ class _FavoriteRecipeCard extends StatelessWidget {
                             color: Colors.red,
                           ),
                           onPressed: () {
-                            // Remove from favorites
                             recipesProvider.toggleFavorite(recipe);
                           },
                         ),
